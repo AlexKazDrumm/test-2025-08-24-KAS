@@ -22,7 +22,7 @@ Node.js (TypeScript), PostgreSQL, Knex, Google Sheets API, Docker/Compose, node-
 2. Запуск:
    ```bash
    docker compose up --build
-````
+``
 
 3. Проверка:
 
