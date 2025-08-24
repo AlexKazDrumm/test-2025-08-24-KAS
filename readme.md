@@ -14,7 +14,7 @@ Node.js (TypeScript), PostgreSQL, Knex, Google Sheets API, Docker/Compose, node-
 - `Dockerfile`, `compose.yaml` — контейнеризация и автозапуск миграций
 
 ## Быстрый старт (Docker)
-1. Скопируйте `example.env` → `.env` и заполните:
+1. Скопируйте `.env.example` → `.env` и заполните:
    - `WB_API_TOKEN` — токен WB (HeaderApiKey)
    - **Google**: либо `GOOGLE_CREDENTIALS_JSON` (одной строкой), либо `GOOGLE_SERVICE_EMAIL` + `GOOGLE_PRIVATE_KEY`
    - `SHEETS_SPREADSHEET_IDS` — ID таблиц через запятую

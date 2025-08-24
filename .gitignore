@@ -10,11 +10,8 @@ coverage/
 # Env / secrets
 .env
 *.env
+!.env.example
 *.local
-
-# Google / WB creds
-*.json
-wb-tarrifs-*.json
 
 # OS / IDE
 .DS_Store
