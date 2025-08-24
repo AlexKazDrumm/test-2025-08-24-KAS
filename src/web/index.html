@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WB Tariffs Service</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <h1>WB Tariffs Service</h1>
+  <div class="meta">
+    <span class="pill" id="health-pill">health: —</span>
+    <span class="pill" id="summary-pill">data: —</span>
+  </div>
+</header>
+
+<main>
+  <section class="card">
+    <h2>Действия</h2>
+    <div class="actions">
+      <button id="btn-fetch">Fetch today</button>
+      <button id="btn-push">Push to Sheets</button>
+    </div>
+
+    <div class="grid" style="margin-top:6px">
+      <div>
+        <strong>Следующий push:</strong>
+        <span id="push-eta">—</span>
+        <span class="muted"> (в <span id="push-at">—</span>)</span>
+      </div>
+      <div class="muted"><strong>Следующий fetch:</strong> <span id="fetch-at">—</span></div>
+    </div>
+
+    <div class="hint">Диапазон для выгрузки: <code id="range"></code>. Таблиц: <code id="sheets-count">0</code></div>
+  </section>
+
+  <section class="card">
+    <h2>Ответ / Лог</h2>
+    <pre id="log" class="log"></pre>
+  </section>
+
+  <section class="card">
+    <h2>Последний снимок</h2>
+    <div class="grid">
+      <div><strong>Дата:</strong> <span id="latest-date">—</span></div>
+      <div><strong>Складов:</strong> <span id="latest-count">—</span></div>
+    </div>
+    <div class="table-wrap">
+      <table id="preview">
+        <thead></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <a href="/api/health" target="_blank">/api/health</a> ·
+  <a href="/api/tariffs/latest" target="_blank">/api/tariffs/latest</a> ·
+  <a href="/api/summary" target="_blank">/api/summary</a>
+</footer>
+
+<script src="app.js" type="module"></script>
+</body>
+</html>
